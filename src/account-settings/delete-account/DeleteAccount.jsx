@@ -98,7 +98,7 @@ export class DeleteAccount extends React.Component {
           )}
         </p>
         <p>
-          <Hyperlink destination="https://support.edx.org/hc/en-us/sections/115004139268-Manage-Your-Account-Settings">
+          <Hyperlink destination="https://nia.tz/user_manual">
             {intl.formatMessage(messages['account.settings.delete.account.text.change.instead'])}
           </Hyperlink>
         </p>
@@ -115,14 +115,14 @@ export class DeleteAccount extends React.Component {
         {isVerifiedAccount ? null : (
           <BeforeProceedingBanner
             instructionMessageId={optInInstructionMessageId}
-            supportArticleUrl="https://support.edx.org/hc/en-us/articles/115000940568-How-do-I-confirm-my-email-"
+            supportArticleUrl="https://nia.tz/user_manual"
           />
         )}
 
         {hasLinkedTPA ? (
           <BeforeProceedingBanner
             instructionMessageId="account.settings.delete.account.please.unlink"
-            supportArticleUrl="https://support.edx.org/hc/en-us/articles/207206067"
+            supportArticleUrl="https://nia.tz/user_manual"
           />
         ) : null}
 
